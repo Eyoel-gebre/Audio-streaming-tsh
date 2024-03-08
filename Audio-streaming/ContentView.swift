@@ -25,7 +25,7 @@ struct ContentView: View {
         // Configuration the session
         do {
             let audioSession = AVAudioSession.sharedInstance()
-            try audioSession.setCategory(.playAndRecord, mode: .default)
+            try audioSession.setCategory(.playAndRecord, mode: .measurement)
             // TODO: Adjust to work with TSH model
             try audioSession.setPreferredSampleRate(44100)
             // 8ms buffers
